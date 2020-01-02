@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".profileActivity">
-
+<!-- show email of logged in user-->
     <TextView
         android:id="@+id/profileTv"
         android:layout_width="wrap_content"

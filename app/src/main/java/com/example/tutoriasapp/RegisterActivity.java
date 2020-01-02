@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,6 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
     //view
     EditText mEmailEt, mPasswordEt;
     Button mRegisterBtn;
+    TextView mhaveaccountTv;
     //Progressbar
     ProgressDialog progressDialog;
 
@@ -50,6 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
         mEmailEt =findViewById(R.id.emailEt);
         mPasswordEt =findViewById(R.id.passwordEt);
         mRegisterBtn=findViewById(R.id.registerBtn);
+        mhaveaccountTv=findViewById(R.id.tcuenta_rgTV);
 
         //In the onCreate() method, initialize the FirebaseAuth instance.
         mAuth = FirebaseAuth.getInstance();
@@ -76,7 +79,14 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+        mhaveaccountTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this,loginActivity.class));
+            }
+        });
     }
+
     private void registerUser(String email, String password){
         progressDialog.show();
         mAuth.createUserWithEmailAndPassword(email, password)

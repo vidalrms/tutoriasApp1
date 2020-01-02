@@ -6,24 +6,32 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".MainActivity">
+
     <Button
-        android:id="@+id/registermain_btn"
-        android:text="Registrarr"
-        style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/loginmain_btn"/>
+       android:id="@+id/registermain_btn"
+       android:text="Registrarse"
+       style="@style/Base.Widget.AppCompat.Button.Colored"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/loginmain_btn"/>
 
 
     <Button
        android:id="@+id/loginmain_btn"
        android:text="Iniciar Sesion"
        android:layout_alignParentBottom="true"
-       android:layout_marginBottom="100dp"
+       android:layout_marginBottom="40dp"
        style="@style/Base.Widget.AppCompat.Button.Colored"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"/>
 
+    <ImageView
+        android:id="@+id/imgvMain"
+        android:layout_width="250dp"
+        android:layout_height="308dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@color/colorAccent" />
 
 
 </RelativeLayout>
