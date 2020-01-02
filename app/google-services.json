@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "783590401309",
+    "firebase_url": "https://tutoriasapp-811be.firebaseio.com",
+    "project_id": "tutoriasapp-811be",
+    "storage_bucket": "tutoriasapp-811be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783590401309:android:31e26df88f36f0ea36adf4",
+        "android_client_info": {
+          "package_name": "com.example.tutoriasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783590401309-jhdasugc4fj0mvdc55cal4caue107v8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tutoriasapp",
+            "certificate_hash": "dc6927ed273f0e28364aef71e8dcbaf87589202e"
+          }
+        },
+        {
+          "client_id": "783590401309-q62eli2lsmt1m7je4t71a8hti2d9ckov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0RS68YY7FBu5GWzkpGqvNtHcHNsY2V1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783590401309-q62eli2lsmt1m7je4t71a8hti2d9ckov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
