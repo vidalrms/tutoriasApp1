@@ -79,10 +79,12 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+        //handle login textview click listener
         mhaveaccountTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RegisterActivity.this,loginActivity.class));
+                finish();
             }
         });
     }

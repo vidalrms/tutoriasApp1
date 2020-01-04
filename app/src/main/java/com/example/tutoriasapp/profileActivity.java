@@ -47,6 +47,14 @@ public class profileActivity extends AppCompatActivity {
             startActivity(new Intent(profileActivity.this,MainActivity.class));
         }
     }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
+    }
+
+
     @Override
     protected void onStart(){
         //checck on start of app
